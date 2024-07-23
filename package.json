@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "remixicon": "^4.3.0"
+  },
+  "devDependencies": {
+    "daisyui": "^4.12.10"
+  }
+}
