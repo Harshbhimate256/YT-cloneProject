@@ -586,4 +586,131 @@ video{
 }
 .main-right{
     width: 25%;
+    /* border: 1px solid red; */
+    display:flex;
+    flex-direction:column;
+    gap: 10px; 
+}
+.right-upper-tab{
+    margin-top:1.5vw;
+    /* background-color: #5e5b5b47; */
+    height:5%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.slider-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-btn p{
+    font-size: 12px;
+    padding-right:10px;
+}
+/* Slider button css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Adjusted width */
+    height: 20px; /* Adjusted height */
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Adjusted height */
+    width: 16px; /* Adjusted width */
+    left: 2px; /* Adjusted position */
+    bottom: 2px; /* Adjusted position */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px); /* Adjusted translate */
+    -ms-transform: translateX(20px); /* Adjusted translate */
+    transform: translateX(20px); /* Adjusted translate */
+}
+.slider.round {
+    border-radius: 20px; /* Adjusted border-radius */
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.recommend-box{
+    display:flex;
+    gap:10px;
+    height:10%;
+}
+.recommend-box:hover{
+    background-color: #272727;
+    cursor:pointer;
+}
+.video-box{
+    width:40%;
+    height:100%;
+    position: relative;
+}
+.video-duration{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.581);
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 4px;
+    top:75%;
+    left:81%;
+    border-radius: 5px;
+}
+.video-box img{
+    object-fit: cover;
+}
+.video-content-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color:white;
+}
+
+.video-content-box p{ 
+    color:grey;
+    font-size:12px;
+    padding:0;
+}
+.video-title{
+    font-size: 15px;
+}
+.views-count{
+    color:grey;
+    font-size: 12px;
+    display:flex;
+    align-items: center;
 }
