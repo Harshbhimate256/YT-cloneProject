@@ -446,6 +446,9 @@ video{
     align-items: center;
     font-weight: bold;
 }
+.classify-btn a{
+    text-decoration: none;
+}
 #classify-btn svg{
     padding-right: 10px;
 }
